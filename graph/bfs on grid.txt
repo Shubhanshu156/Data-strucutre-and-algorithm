@@ -1,0 +1,10 @@
+'''BFS IS USED TO FIND SMALLEST 
+DISTANCE BETWEEN START AND END POINT
+'''
+
+
+first create a matrix for visited and distance with one extra column and row SO IT easy to reach node with same number
+now we will call the function with coordinates which we have to start 
+then run a loop till queue is not empty
+then append that coordinates to queue then move to all four direction which are valid
+then append  coordinates that  are valid to queue 

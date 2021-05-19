@@ -1,0 +1,3 @@
+this is a code to find level of bfs and print their distance from root
+first create a queue then append a node then visit their adjacent node if ther are unvisit append them to queue
+and add distance of that node equal to distance of its parent node+1

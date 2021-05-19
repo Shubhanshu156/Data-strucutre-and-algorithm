@@ -1,0 +1,7 @@
+BIPARTITE GRAPH:A Bipartite Graph is a graph whose vertices can be divided into two independent sets, U
+                and V such that every edge (u, v) either connects a vertex from U to V or a vertex from V
+                to U. In other words, for every edge (u, v), either u belongs to U and v to V, or u belongs 
+                to V and v to U. We can also say that there is no edge that connects vertices of same set
+
+basic logic behind bipartite graph is to alternatly color all nodes we are able to do that then this is bipartite graph otherwise this is not
+take a node make all its child color opposite of that node if color of node an d child are same then print(no)

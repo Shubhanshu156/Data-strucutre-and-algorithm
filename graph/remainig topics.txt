@@ -1,0 +1,3 @@
+1.connectedd components
+2.cycle detection in graph
+3.attunation point in graph
