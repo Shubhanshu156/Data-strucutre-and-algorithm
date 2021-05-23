@@ -1,0 +1,2 @@
+first we have to sort aour input on the basis of weight then we have to create a lst 
+now applying dsu(path by compression and union by rank) then if their parent are not same then union else skip
