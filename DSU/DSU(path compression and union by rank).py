@@ -5,7 +5,7 @@ def find(n):
         else:
             while lst[n]>=0:   # check till n is negative means it is lst 
                 n=lst[n]
- 
+ # adding comments
 def merge(a,b):  # merginf(union) by union by rank
     if a>b: # if rank of a is greate than b then add a to b
         lst[a]+=lst[b]
