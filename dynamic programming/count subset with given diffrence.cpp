@@ -1,5 +1,5 @@
-#include<bits/stdc++.h>
-using namespace std;
+    #include<bits/stdc++.h>
+    using namespace std;
     
 int t[20][20];
 int topdown(int array[],int sum,int n ){
@@ -23,7 +23,7 @@ int topdown(int array[],int sum,int n ){
         {
             /* code */
             if (array[i-1]<=j){
-                a[i][j]=a[i-1][j-array[i-1]]||a[i-1][j];
+                a[i][j]=a[i-1][j-array[i-1]]+a[i-1][j];
             }
             else{
                 a[i][j]=a[i-1][j];
@@ -40,13 +40,21 @@ int topdown(int array[],int sum,int n ){
     int main(){
         
         
-        int weight[20]={2,3,7,8,10};      
-        int capacity=11;
+        int weight[3]={1,2,3};
+        int sum=0;
+        for (int i = 0; i < sizeof(weight)/sizeof(weight[0]); i++)
+        {
+            /* code */
+            sum+=weight[i];
+        }
         
-        int n=5;
- 
         
-        cout<<topdown(weight,1,5)<<endl;
-              
- 
+        int capacity=3;
+        int diff=1;
+
+        int n=3;
+        int newsum=(sum+diff)/2;//S1-S2=diff
+                                //S1+S2=sum>>S1=(sum+diff)/2 count s1
+       cout<<topdown(weight,newsum,n);
+    
     }

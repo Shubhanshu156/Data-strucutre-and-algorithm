@@ -1,5 +1,5 @@
-    #include<bits/stdc++.h>
-    using namespace std;
+#include<bits/stdc++.h>
+using namespace std;
     
 int t[20][20];
 int topdown(int weight[],int val[],int capacity,int n ){
@@ -26,11 +26,22 @@ int topdown(int weight[],int val[],int capacity,int n ){
                 a[i][j]=a[i-1][j];
             }
         }
+    
         
     }
-    
-    
+    for (int i = 0; i < n+1; i++)
+    {
+        for (int j = 0; i < capacity+1; i++)
+        {
+            /* code */
+            cout<<a[i][j]<<" ";
 
+        }
+        cout<<endl;
+        
+        /* code */
+    }
+    
 }
     int knapsack(int weight[],int val[],int capacity,int n ){
         if (capacity==0||n==0){ //recursive function base condition will be initlisation of top down
