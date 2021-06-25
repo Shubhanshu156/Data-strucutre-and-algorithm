@@ -29,7 +29,7 @@ public:
     for (int i = 1; i < n+1; i++)
     {
         /* code */
-        for (int j = 1; j < sum+1; j++)
+        for (int j = 0; j < sum+1; j++)
         {
             /* code */
             if (nums[i-1]<=j){

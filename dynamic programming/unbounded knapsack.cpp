@@ -20,7 +20,8 @@ int topdown(int weight[],int val[],int capacity,int n ){
         {
             /* code */
             if (weight[i-1]<=j){
-                a[i][j]=max(val[i-1]+a[i-1][j-weight[i-1]],a[i-1][j]);
+                a[i][j]=max(val[i-1]+a[i][j-weight[i-1]],a[i-1][j]);
+                                     //calling with i because we can include this in future   
             }
             else{
                 a[i][j]=a[i-1][j];
@@ -43,7 +44,7 @@ int topdown(int weight[],int val[],int capacity,int n ){
     }
     
 }
-    int knapsack(int weight[],int val[],int capacity,int n ){
+int knapsack(int weight[],int val[],int capacity,int n ){
         if (capacity==0||n==0){ //recursive function base condition will be initlisation of top down
             return 0;
             
