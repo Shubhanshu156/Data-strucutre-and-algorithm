@@ -1,8 +1,9 @@
 #include<bits/stdc++.h>
 #include<String>
 using namespace std;
+//in this same as for printing lcs but in this case we are adding maximum to answewr string instead 
 int dp[1000][1000];
-int topdown(string x,string y,int n,int m){
+string topdown(string x,string y,int n,int m){
     int DP[n+1][m+1];
     memset(DP,-1,sizeof(DP));
     for(int i = 0; i <=n; i++)
@@ -49,25 +50,38 @@ int topdown(string x,string y,int n,int m){
         }
         else if (DP[i-1][j]>DP[i][j-1]) // if not equal then we will move to upper and left which is maximum
         {
-            i-=1;
+            ans.push_back(x[i-1]); //an store the max
+            i--;
         }
         else
         {
+            ans.push_back(y[j-1]); //storing the max
             j-=1;
         }
     }
-   // return ans;
-    return (n+m-ans.length());
+    while (i>0) // as it maybe possible that string1="as" and other is "" in that case we are pushing as 
+    {
+        ans.push_back(x[i-1]);
+        i--;
+    }
+    while (j>0) // as it maybe possible that string1="" and other is "as" in that case we are pushing as until legth of "as" is 0
+    {
+        ans.push_back(y[j-1]);
+        j--;
+        
+    }
     
+   // reverse(ans.begin(),ans.end());
+    return ans;
     
 }
     
 
 int main(){
     memset(dp,-1,sizeof(dp));
-    string x="abcdgh";
-    string y="abcdh";
-    int s=topdown(x,y,6,5);
-   // reverse(s.begin(),s.end());
+    string x="HELLO";
+    string y="GEEK";
+    string s=topdown(x,y,6,5);
+    reverse(s.begin(),s.end());
     cout<<s;
 }
