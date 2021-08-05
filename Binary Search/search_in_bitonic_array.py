@@ -3,9 +3,9 @@
 
 # A binary search based function
 # that returns index of a peak element
-def findPeakUtil(arr, low, high, n):
-	
-	# Find index of middle element
+
+def findPeakUtil(arr, low, high, n):	
+    # Find index of middle element
 	# (low + high)/2
 	mid = low + (high - low)/2
 	mid = int(mid)
@@ -34,14 +34,16 @@ def findPeakUtil(arr, low, high, n):
 
 # A wrapper over recursive
 # function findPeakUtil()
-def findPeak(arr, n):
+def findPeak(arr, n,,target):
 
-	return findPeakUtil(arr, 0, n - 1, n)
+	index=findPeakUtil(arr, 0, n - 1, n)//first find max element in bitonic sequence 
+    return(max(BinarySearch_increasing(arr,low,index),BinarySearch_desc(Arr,index+1,high,target))) //then in next steps search in both array
 
 
 # Driver code
-arr = [2,4,3,5,4]
+arr = [1,2,3,4,5,6,5,4,3,2,1]
 n = len(arr)
+target=1
 print("Index of a peak point is", findPeak(arr, n))
 	
 # This code is contributed by

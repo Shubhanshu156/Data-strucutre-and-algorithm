@@ -12,7 +12,7 @@ int BinarySearch(int arr[],int start,int end){
     int mid=(start+end)/2;
     int left=(mid-1+length)%length;
     int right=(mid+1)%length;
-    if ((arr[mid]<=arr[left]) && (arr[mid]<=arr[right]))
+    if ((arr[mid]<=arr[left]) && (arr[mid]<=arr[right])) 
     {
         /* code */
         return mid;

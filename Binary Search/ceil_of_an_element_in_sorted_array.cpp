@@ -1,5 +1,6 @@
 #include<bits/stdc++.h>
 using namespace std;
+int res=-1;
 int BinarySearch(int arr[],int low,int end,int element){
     if (low>end)
     {
@@ -7,7 +8,6 @@ int BinarySearch(int arr[],int low,int end,int element){
         /* code */
     }
     int mid=(low+end)/2;
-    //cout<<arr[mid]<<endl;
     if (arr[mid]==element)
     {
         /* code */
@@ -15,8 +15,9 @@ int BinarySearch(int arr[],int low,int end,int element){
     }
     if (arr[mid]>element)
     {
+        res=mid;
         /* code */
-       return(BinarySearch(arr,low,mid-1,element));
+       return BinarySearch(arr,low,mid-1,element);
     }
     if (arr[mid]<element){
         return(BinarySearch(arr,mid+1,end,element));
@@ -31,11 +32,7 @@ int main(){
     int low=0;
     int end=sizeof(arr)/4;
     //cout<<end;
-    //cout<<end<<endl;
-    int element=134;
-    int hi=3;
-    cout<<arr[9]<<endl;
-    cout<<arr[10];
-   //cout<<BinarySearch(arr,low,end,123);
-//    cout<<hi;
+    int element=3.3;
+   cout<<BinarySearch(arr,low,end,6)<<endl;
+   cout<<res; //if not find in binary search
 }

@@ -5,7 +5,7 @@
 # that returns index of a peak element
 def findPeakUtil(arr, low, high, n):
 	
-	# Find index of middle element
+# Find index of middle element
 	# (low + high)/2
 	mid = low + (high - low)/2
 	mid = int(mid)
@@ -40,7 +40,7 @@ def findPeak(arr, n):
 
 
 # Driver code
-arr = [2,4,3,5,4]
+arr = [1,2,3,4,5,6,5,4,3,2,1]
 n = len(arr)
 print("Index of a peak point is", findPeak(arr, n))
 	
