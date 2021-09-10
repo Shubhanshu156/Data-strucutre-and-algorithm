@@ -1,7 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 int length;
-//int rotation=0 is this nine is not forever at least we are togethr i kno i am not
+//int rotation=0 
 int BinarySearch(int arr[],int start,int end){
     if (start>end)
     {
@@ -34,7 +34,7 @@ int BinarySearch(int arr[],int start,int end){
 }
 
 int main(){
-    int arr[]={3,4,5,6,7,8,9,1,2};
+    int arr[]={4,5,6,7,0,1,2};
     length=sizeof(arr)/4;
     int start=0;
     int end=sizeof(arr)/4;
