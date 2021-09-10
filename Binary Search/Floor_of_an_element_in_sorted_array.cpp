@@ -3,7 +3,7 @@ using namespace std;
 int res;
 int BinarySearch(int arr[],int low,int end,int element){
     if (low>end)
-    {
+    {       
         return -1;
         /* code */
     }
