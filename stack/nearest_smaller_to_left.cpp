@@ -1,6 +1,6 @@
 #include<bits/stdc++.h>
 using namespace std;
-vector<int> find(vector<int> arr){
+vector<int> find(vector<int> arr){      
     stack<int> s;
     vector<int> result;
     for (int i = 0; i<arr.size(); i++) //run a loop from left to right
