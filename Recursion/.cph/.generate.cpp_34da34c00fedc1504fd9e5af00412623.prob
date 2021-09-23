@@ -1,0 +1,1 @@
+{"name":"Local: generate","url":"c:\\Users\\brij bihari\\Desktop\\DSA\\Recursion\\generate.cpp","tests":[{"id":1632151443195,"input":"1\n50","output":"()()()\n((()))\n(()())\n()\n((()))\n(())()\n()(())"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\brij bihari\\Desktop\\DSA\\Recursion\\generate.cpp","group":"local","local":true}
