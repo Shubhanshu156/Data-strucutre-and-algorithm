@@ -1,13 +1,20 @@
-for _ in range(int(input())):
-    n,k=map(int,input().split())
-    arr=list(map(int,input().split()))
-    arr.sort()
-    ans=0
-    for i in range(k):
-        if arr[i]<0:
-            val=-arr[i]
-            ans+=val
-    for j in range(n):
-        if arr[j]>0:
-            ans+=arr[j]
-    print(ans)
+def countsetbits(n):
+        num=n
+        cnt = 0
+        while (n > 0):
+             if ((n & 1) > 0):
+                 cnt += 1
+
+             n = n >> 1
+        print(cnt)
+        cnt=0
+        #  Approach 2
+        # https:www.geeksforgeeks.org/count-set-bits-in-an-integer/ (Brian Kernighan’s Algorithm)
+        n=num
+        while(n>0):
+            cnt+=1
+            n=n&(n-1)        
+        print(cnt)
+print(countsetbits(5))
+        
+

@@ -40,8 +40,8 @@ int topdown(int coin[],int sum,int n ){
     int main(){
         
         
-        int weight[3]={1,2,3};
-        int sum=0;
+        int weight[3]={1,5,7};
+        int sum=11;
         for (int i = 0; i < sizeof(weight)/sizeof(weight[0]); i++)
         {
             /* code */
@@ -49,8 +49,8 @@ int topdown(int coin[],int sum,int n ){
         }
         
         
-        int capacity=3;
-        int n=5;
+        int capacity=11;
+        int n=3;
         int newsum=0;
        cout<<topdown(weight,capacity,3);
     

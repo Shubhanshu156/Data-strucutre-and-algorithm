@@ -55,7 +55,7 @@ if __name__ == "__main__":
 	g.addEdge(1, 0)
 	g.addEdge(2, 3)
 	g.addEdge(3, 4)
-	cc = g.connectedComponents()
+	cc = g.connectedCompon	ents()
 	print("Following are connected components")
 	print(cc)
 

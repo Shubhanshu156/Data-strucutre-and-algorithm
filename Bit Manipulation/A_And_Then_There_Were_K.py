@@ -1,3 +1,5 @@
-for _ in range(int(input())):
-    a,b=map(int,input().split())
-    print(a^b)
+def powerof2(n):
+    if n&(n-1)==0:
+        print("yes")
+    else:
+        print("no")

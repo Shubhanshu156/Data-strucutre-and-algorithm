@@ -15,7 +15,7 @@ using namespace std;
     }
 
 int main(){
-    vector<int>sub={5,4,-1,7,8};
+    vector<int>sub={-5,1,-2,3,-1,2,-2};
     cout<<maxSubArray(sub);
 
 
